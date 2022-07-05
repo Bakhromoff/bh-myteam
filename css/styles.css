@@ -123,7 +123,7 @@ img {
   text-decoration: none;
   text-align: center;
   border: 2px solid #fff;
-  color: #fff;
+  color: var(--text-color);
   border-radius: 24px;
   font-weight: 600;
   font-size: 18px;
@@ -185,7 +185,7 @@ img {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  color: #fff;
+  color: var(--text-color);
   transition: color 0.4s ease, opacity 0.4s ease;
 }
 .sitenav__link:hover {
@@ -201,8 +201,8 @@ img {
   color 0.4s ease;
 }
 .site-header__button:hover {
-  border-color: #fff;
-  background-color: #fff;
+  border-color: var(--text-color);
+  background-color: var(--text-color);
   color: var(--dark-green);
 }
 
@@ -251,7 +251,7 @@ img {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  color: #fff;
+  color: var(--text-color);
 }
 
 /* MAIN CONTENT */
@@ -290,7 +290,7 @@ img {
   font-weight: 700;
   font-size: 48px;
   line-height: 48px;
-  color: #fff;
+  color: var(--text-color);
   width: 100%;
   max-width: 445px;
 }
@@ -330,6 +330,80 @@ img {
   font-weight: 600;
   font-size: 15px;
   line-height: 25px;
-  color: #fff;
+  color: var(--text-color);
   opacity: 0.8;
+}
+
+/* STORIES */
+
+.stories {
+  background-color: var(--jungle-green);
+  padding-top: 140px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stories__heading {
+  margin-top: 0;
+  margin-bottom: 56px;
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 47px;
+  color: var(--text-color);
+  width: 100%;
+  max-width: 932px;
+  text-align: center;
+}
+.green-text {
+  color: var(--police-blue-color);
+}
+.stories__list {
+  display: flex;
+  align-items: flex-start;
+}
+.stories__item {
+  padding-top: 36px;
+  background-image: url(../img/item-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stories__item:not(:last-child) {
+  margin-right: 30px;
+}
+.stories__author-text {
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+}
+.stories__author-name {
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--rapture-blue-color);
+}
+.stories__author-job {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+}
+.stories__author-avatar {
+  display: block;
+  empty-cells: 62px;
+  height: 62px;
+  border: 2px solid #C4FFFE;
+  border-radius: 50%;
 }
