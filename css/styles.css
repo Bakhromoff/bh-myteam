@@ -49,7 +49,6 @@
 
 :root {
   --text-color: #fff;
-  --text-black-color: ;
   --midnight-green-color: #014E56;;
   --light-coral-color: #e67e7e;
   --rapture-blue-color: #79c8c7;
@@ -406,4 +405,42 @@ img {
   height: 62px;
   border: 2px solid #C4FFFE;
   border-radius: 50%;
+}
+
+/* CTA */
+
+.cta {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  background-color: var(--light-coral-color);
+  background-image: url(../img/cta-bg.svg);
+  background-repeat: no-repeat;
+  background-position: 0 56px;
+}
+
+.cta__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cta__heading {
+  margin: 0;
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: var(--sacramento-green-color);
+}
+.cta__button {
+  background-color: transparent;
+  color: var(--sacramento-green-color);
+  border-color: var(--sacramento-green-color);
+  transition: opacity 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+}
+.cta__button:hover {
+  background-color: var(--sacramento-green-color);
+  color: #fff;
+}
+.cta__button:active {
+  opacity: 0.6;
 }
