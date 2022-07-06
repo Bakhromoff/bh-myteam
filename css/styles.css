@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: "Livvic";
-  src: url("Livvic-BoldItalic.woff2") format("woff2"),
-  url("Livvic-BoldItalic.woff") format("woff");
+  src: url("../fonts/Livvic-BoldItalic.woff2") format("woff2"),
+  url("../fonts/Livvic-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -11,8 +11,8 @@
 
 @font-face {
   font-family: "Livvic";
-  src: url("Livvic-MediumItalic.woff2") format("woff2"),
-  url("Livvic-MediumItalic.woff") format("woff");
+  src: url("../fonts/Livvic-MediumItalic.woff2") format("woff2"),
+  url("../fonts/Livvic-MediumItalic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -20,8 +20,8 @@
 
 @font-face {
   font-family: "Livvic";
-  src: url("Livvic-Regular.woff2") format("woff2"),
-  url("Livvic-Regular.woff") format("woff");
+  src: url("../fonts/Livvic-Regular.woff2") format("woff2"),
+  url("../fonts/Livvic-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -29,8 +29,8 @@
 
 @font-face {
   font-family: "Livvic";
-  src: url("Livvic-SemiBold.woff2") format("woff2"),
-  url("Livvic-SemiBold.woff") format("woff");
+  src: url("../fonts/Livvic-SemiBold.woff2") format("woff2"),
+  url("../fonts/Livvic-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -38,8 +38,8 @@
 
 @font-face {
   font-family: "Livvic";
-  src: url("Livvic-Bold.woff2") format("woff2"),
-  url("Livvic-Bold.woff") format("woff");
+  src: url("../fonts/Livvic-Bold.woff2") format("woff2"),
+  url("../fonts/Livvic-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -514,4 +514,138 @@ img {
   text-align: right;
   color: #fff;
   opacity: 0.6;
+}
+
+
+/* ABOUT */
+
+.about-header-hero-wrapper {
+  background-color: var(--midnight-green-color);
+}
+.about-hero {
+  padding-top: 47px;
+  padding-bottom: 120px;
+}
+.about-hero__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.about-hero__headeing {
+  margin: 0;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100px;
+  color: var(--text-color);
+}
+.about-hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+.orange-line {
+  width: 50px;
+  height: 4px;
+  background-color: var(--light-coral-color);
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.about-hero__text {
+  width: 100%;
+  max-width: 730px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color);
+}
+
+
+/* DIRECTORS */
+
+.directors {
+  margin: 0;
+  padding-top: 140px;
+  padding-bottom: 64px;
+  background-color: var(--jungle-green);
+}
+.directors__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.directors__heading {
+  margin-top: 0;
+  margin-bottom: 64px;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+}
+.directors__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.directors__item {
+  width: 350px;
+  margin-bottom: 76px;
+  margin-right: 30px;
+  background-color: var(--sacramento-green-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.directors__item:nth-child(3n) {
+  margin-right: 0;
+}
+.director {
+  padding: 32px 24px 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+.director__img {
+  border: 2px solid #C4FFFE;
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+}
+.director__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--rapture-blue-color);
+  margin: 0;
+}
+.director__job {
+  display: block;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--text-color);
+  margin: 0;
+  flex-grow: 1;
+}
+.more-info-button {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: var(--light-coral-color);
+  margin-bottom: -28px;
+  border: 0;
+  transition: background-color 0.4s ease;
+}
+.more-info-button:hover {
+  background-color: var(--rapture-blue-color);
+}
+.button-icon {
+  width: 16px;
+  height: 16px;
+  display: block;
 }
