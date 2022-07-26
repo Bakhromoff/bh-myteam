@@ -198,6 +198,7 @@ img {
   background-color: var(--midnight-green-color);
   transition: border-color 0.4s ease, background-color 0.4s ease,
   color 0.4s ease;
+  margin-left: 20px;
 }
 .site-header__button:hover {
   border-color: var(--text-color);
